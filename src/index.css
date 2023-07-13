@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.menu-bar {
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    padding: 3px 10px 3px 10px;
+}
+
+.canvas-content {
+    display: inline-block;
+    line-height: 0;
+    position: relative;
+}
+
+
+.masking {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 28, 28, 0.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.masking.none {
+    display: none;
+}
+
+.masking-tex {
+    font-size: 30px;
+    color: #fff;
+    line-height: 33px;
+}
+
+.masking-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.canvas-title {
+    margin-bottom: 20px;
+    font-size: 25px;
+    display: none;
+}
+
+/*body and head have a reponsive Design */
+
+h1{
+    color: black;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 3em;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+h2{
+    border-color: black;
+    font-size: 3em;
+    text-align: center;
+}
+li{
+    border-color:black;
+    font-size: 20px;
+    text-align: center;
+    border-style: double;
+}
